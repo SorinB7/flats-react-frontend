@@ -1,0 +1,192 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hamburgerMenu {
+    display: flex; 
+    cursor: pointer;
+  }
+
+  .dropdownMenu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .dropdownMenu.active {
+    display: block; 
+    animation: slideDown 0.3s ease-in-out; 
+  }
+
+  .mainWrapper {
+    width: 100%; 
+  }
+
+  /* Animație pentru dropdown */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dropdownMenu a {
+    display: block;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .dropdownMenu a:hover {
+    background-color: #444;
+  }
+
+  .timerContainer {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Tabele */
+  .userTable,
+  .favouritesTable,
+  .myFlatsTable {
+    font-size: 14px;
+  }
+
+  .userTable th,
+  .favouritesTable th,
+  .myFlatsTable th {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .userTable td,
+  .favouritesTable td,
+  .myFlatsTable td {
+    padding: 8px;
+  }
+
+  /* Containere */
+  .allUsersContainer,
+  .newFlatContainer,
+  .profileContainer,
+  .registerContainer {
+    padding: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Butoane */
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Formulare */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Mesaje de eroare */
+  .error {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* Ajustări pentru pagina FlatDetails */
+  .premiumDetails {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .flatImage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .editButton,
+  .messageButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* FlatList ajustări */
+  .flatList {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+
+  .flatItem {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Icon Buttons */
+  .iconButton {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* Ajustări pentru pagina MyAccount */
+  .accountDetails {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .editAccountButton,
+  .deleteAccountButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Ajustări pentru AllUsers */
+  .userRow {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  .userRow > div {
+    font-size: 13px;
+  }
+
+  /* Ajustări pentru navigație */
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .homeContainer{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    align-items: start;
+    justify-content: start;
+  }
+}

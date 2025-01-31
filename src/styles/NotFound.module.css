@@ -1,0 +1,91 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.notFoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(270deg, #2b1055, #7597de, #020024);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Container pentru conținut */
+.content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Imagine */
+.image {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Efect de plutire pentru imagine */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Titlu */
+.title {
+  font-size: 36px;
+  color: #f05454;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Descriere */
+.description {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buton */
+.button {
+  background-color: #f05454;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(240, 84, 84, 0.4);
+}
+
+.button:hover {
+  background-color: #c74242;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(240, 84, 84, 0.6);
+}

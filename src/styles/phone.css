@@ -1,0 +1,198 @@
+@media (max-width: 767px) {
+  /* Ascundem sidebar-ul */
+  .sidebar {
+    display: none;
+  }
+
+  /* Activăm meniul hamburger */
+  .hamburgerMenu {
+    display: flex;
+  }
+
+  /* Dropdown Menu */
+  .dropdownMenu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .dropdownMenu.active {
+    display: block; 
+  }
+
+  .dropdownMenu a {
+    display: block;
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .dropdownMenu a:hover {
+    background-color: #444;
+  }
+
+  /* Timer-ul */
+  .timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    border-top: 2px solid #444;
+    border-radius: 5px;
+  }
+
+  .timerLabel {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .timer {
+    display: none ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4fc3f7;
+  }
+
+  /* Tabele */
+  .userTable,
+  .favouritesTable,
+  .myFlatsTable {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .userTable th,
+  .favouritesTable th,
+  .myFlatsTable th {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .userTable td,
+  .favouritesTable td,
+  .myFlatsTable td {
+    padding: 6px;
+  }
+
+  /* Containere */
+  .allUsersContainer,
+  .newFlatContainer,
+  .profileContainer,
+  .registerContainer {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Butoane */
+  button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .editButton,
+  .messageButton {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  /* Formulare */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  /* Mesaje de eroare */
+  .error {
+    font-size: 10px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  /* Flat List */
+  .flatList {
+    padding: 5px;
+  }
+
+  .flatItem {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* Icon Buttons */
+  .iconButton {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  /* Ajustări pentru pagina FlatDetails */
+  .premiumDetails {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .flatImage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mesaje și acțiuni */
+  .messageSection {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  /* Loader */
+  .loading {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* My Account Page */
+  .accountDetails p {
+    font-size: 14px;
+  }
+
+  .modalContent {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Spinner */
+  .spinner-container {
+    height: 50vh;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+  }
+}

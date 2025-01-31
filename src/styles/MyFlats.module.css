@@ -1,0 +1,111 @@
+.myFlatsContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+.myFlatsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.myFlatsTable th,
+.myFlatsTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.myFlatsTable th {
+  background-color: #4fc3f7;
+  color: white;
+  font-weight: bold;
+}
+
+.myFlatsTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.myFlatsTable tr:hover {
+  background-color: #ddd;
+}
+
+.actionsHeader {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.actionButton:hover {
+  transform: scale(1.1);
+}
+
+.addButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.addButton:hover {
+  background-color: #388e3c;
+}
+
+.detailsButton {
+  background-color: #3498db;
+  color: white;
+}
+
+.detailsButton:hover {
+  background-color: #2980b9;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.tableButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 767px){
+  .myFlatsContainer{
+    padding: 5px;
+  }
+
+}

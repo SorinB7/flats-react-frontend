@@ -1,0 +1,27 @@
+.imageContainer {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .credit {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .credit a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .credit a:hover {
+    text-decoration: underline;
+  }
+  

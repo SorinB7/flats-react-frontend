@@ -1,0 +1,221 @@
+.homeContainer {
+    padding: 2rem;
+    background: linear-gradient(135deg, #354b5f, hsl(184, 6%, 48%));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .flatsTable {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: black;
+  }
+  
+  .flatsTable th,
+  .flatsTable td {
+    padding: 0.8rem;
+    text-align: left;
+    border: 1px solid #89898a;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .flatsTable th {
+    background-color: #4facfe;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .flatsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .flatsTable tr:hover {
+    background-color: #ddd;
+  }
+
+   .actions {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+    justify-content: flex-start;
+  }
+
+  .actionsButton {
+    width: 12rem;
+    background-color: #4fc3f7;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .actionsButton:hover {
+    background-color: #29b6f6;
+  }
+  
+  .viewButton {
+    border: 1px solid black;
+    background-color: #319134;
+  }
+  
+  .viewButton:hover {
+    background-color: #388e3c;
+  }
+  
+  .favButton {
+    background-color: lightgray;
+    color: black;
+    border: 1px solid gray;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .favButton:hover {
+    background-color: #f57c00;
+  }
+
+  .favButton {
+    background-color: lightgray;
+    color: black;
+    border: 1px solid gray;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .favActive {
+    background-color: rgb(0, 247, 255);
+    color: black;
+    border: 1px solid darkblue;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .messageButton {
+    background-color: #ffeb3b;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .messageButton:hover {
+    background-color: #fdd835;
+  }
+  
+  .messageButton::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Ascundem coloanele Name, Last Name, și Email */
+    .flatsTable th:nth-child(1), 
+    .flatsTable th:nth-child(6),
+    .flatsTable th:nth-child(7), 
+    .flatsTable td:nth-child(1), 
+    .flatsTable td:nth-child(6), 
+    .flatsTable td:nth-child(7)  {
+      display: none;
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    /* Ascundem coloanele Name, First Name, Last Name și Email */
+    .flatsTable th:nth-child(1), 
+    .flatsTable th:nth-child(5), 
+    .flatsTable th:nth-child(6), 
+    .flatsTable th:nth-child(7),  
+    .flatsTable td:nth-child(1), 
+    .flatsTable td:nth-child(5), 
+    .flatsTable td:nth-child(6), 
+    .flatsTable td:nth-child(7)  {
+      display: none;
+    }
+  
+    /* Ajustăm margin-ul și padding-ul pentru container */
+    .homeContainer {
+      padding: 5px;
+      margin: 0;
+    }
+  
+    /* Ajustăm celulele pentru a ocupa spațiul */
+    td {
+      width: fit-content;
+      font-size: 10px;
+    }
+
+    .actions .iconButton {
+    width: 20px; 
+    height: 25px; 
+    padding: 2px; 
+    }
+
+    .filters{
+      justify-content: center;
+    }
+  }
+  
+  
+

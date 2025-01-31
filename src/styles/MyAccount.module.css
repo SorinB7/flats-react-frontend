@@ -1,0 +1,192 @@
+/* src/styles/MyAccount.module.css */
+
+/* Define CSS variables for theme customization */
+:root {
+  --primary-color: #4caf50;
+  --primary-hover: #388e3c;
+  --danger-color: #f44336;
+  --danger-hover: #d32f2f;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --modal-shadow: rgba(0, 0, 0, 0.2);
+  --font-family: 'Arial, sans-serif';
+}
+
+/* Main container styles */
+.accountContainer {
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px var(--modal-shadow);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Account details */
+.accountDetails {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.accountDetails p {
+  margin: 0.5rem 0;
+}
+
+/* Button base styles */
+.editButton,
+.deleteButton {
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Edit button styles */
+.editButton {
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  box-shadow: 0 4px 8px var(--modal-shadow);
+}
+
+.editButton:hover {
+  background: linear-gradient(45deg, var(--primary-hover), var(--primary-color));
+  transform: translateY(-2px);
+}
+
+/* Delete button styles */
+.deleteButton {
+  background: linear-gradient(45deg, var(--danger-color), var(--danger-hover));
+  color: white;
+  box-shadow: 0 4px 8px var(--modal-shadow);
+}
+
+.deleteButton:hover {
+  background: linear-gradient(45deg, var(--danger-hover), var(--danger-color));
+  transform: translateY(-2px);
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px var(--modal-shadow);
+  z-index: 1000;
+  border-radius: 12px;
+  max-width: 90%; /* Makes sure it fits on smaller screens */
+  width: 500px;
+  animation: fadeIn 0.3s ease-in-out;
+  overflow-y: auto; /* Ensures the content is scrollable if it overflows */
+}
+
+/* Modal container (for centering) */
+.modalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+  z-index: 999; /* Below modal z-index */
+}
+
+/* Modal content and actions */
+.modalContent label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.modalContent input,
+.modalContent select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.modalActions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .accountContainer {
+      padding: 1.5rem;
+      width: 70%;
+  }
+
+  .editButton,
+  .deleteButton {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+  }
+
+  .modal {
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accountContainer {
+      padding: 1rem;
+      font-size: 1rem;
+      width: 80%;
+  }
+
+  .editButton,
+  .deleteButton {
+      width: 100%;
+      margin: 0.3rem 0;
+      padding: 0.6rem;
+  }
+
+  .modal {
+    padding: 0.8rem;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .modalActions {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+}

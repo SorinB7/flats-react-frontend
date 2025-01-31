@@ -1,0 +1,250 @@
+.flatDetailsContainer {
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #4d5055;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  color: #2c3e50;
+}
+
+/* Imagine apartament */
+.flatImage img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+/* Secțiunea detalii premium */
+.premiumDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px 40px; 
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f0f4fc); 
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #2c3e50;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* Efect de decor fundal */
+.premiumDetails::before,
+.premiumDetails::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.premiumDetails::before {
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(79, 195, 247, 0.2);
+}
+
+.premiumDetails::after {
+  bottom: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: rgba(56, 161, 169, 0.2);
+}
+
+/* Titlu secțiune */
+.premiumDetailsTitle {
+  grid-column: span 2; 
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000 !important;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.premiumDetails strong {
+  color: #1a202c;
+  font-weight: bold;
+}
+
+/* Text detalii */
+.premiumDetails p {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d3748;
+  margin: 0;
+}
+
+.detailIcon {
+  font-size: 20px;
+  color: #3182ce;
+}
+
+
+/* Butoane */
+.editButton,
+.messageButton {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.editButton {
+  background-color: #38a169;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #2f855a;
+  transform: translateY(-2px);
+}
+
+.messageButton {
+  background-color: #31afce;
+  color: white;
+}
+
+.messageButton:hover {
+  background-color: #0c5b6e;
+  transform: translateY(-2px);
+}
+
+/* Secțiunea mesaje */
+.messageSection {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mesaje premium */
+.premiumMessageSection {
+  margin-top: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Input mesaje */
+.messageInput {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.messageInput:focus {
+  border-color: #3182ce;
+  outline: none;
+  box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+}
+
+/* Mesaje de succes și eroare */
+.successMessage {
+  color: #38a169;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.errorMessage {
+  color: #e53e3e;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Butoane premium */
+.premiumDetails button {
+  margin-top: 20px;
+  background: #4fc3f7;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.premiumDetails button:hover {
+  background: #29b6f6;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+  .premiumDetails {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px; 
+  }
+
+  .detailsColumn {
+    width: 100%; 
+  }
+
+  .flatDetailsContainer{
+    padding: 0;
+  }
+
+  .premiumDetails::before,
+  .premiumDetails::after {
+    content: none;
+  }
+
+  .messageInput{
+    padding: 0;
+  }
+
+  .messageModal {
+    width: 90% !important; 
+    padding: 10px !important; 
+  }
+
+  .messageInput {
+    width: 85%; 
+    height: 70px; 
+    font-size: 14px; 
+    padding-right: 15px;
+  }
+
+  .messageList {
+    max-height: 200px; 
+    padding: 8px; 
+  }
+
+  .actionsModal button {
+    padding: 6px 10px; 
+    font-size: 12px; 
+  }
+  
+}
+

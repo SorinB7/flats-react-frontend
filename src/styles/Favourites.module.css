@@ -1,0 +1,103 @@
+.favouritesContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .favouritesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .favouritesTable th, .favouritesTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .favouritesTable th {
+    background-color: #4facfe;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .favouritesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .favouritesTable tr:hover {
+    background-color: #ddd;
+  }
+  
+  .removeButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .removeButton:hover {
+    background-color: #c0392b;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .viewButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewButton:hover {
+    background-color: #45a049;
+  }
+  
+  .removeButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .removeButton:hover {
+    background-color: #c0392b;
+  }
+  
+
+  @media (max-width: 767px){
+    .favouritesContainer{
+      padding: 0;
+    }
+
+    .favouritesTable th:nth-child(1),
+  .favouritesTable td:nth-child(1) {
+    display: none; 
+  }
+  }

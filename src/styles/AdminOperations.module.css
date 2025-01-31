@@ -1,0 +1,41 @@
+.operations {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .iconButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .iconButton.admin {
+    color: green;
+  }
+  
+  .iconButton.regular {
+    color: orange;
+  }
+  
+  .iconButton.delete {
+    color: red;
+  }
+  
+  .iconButton.delete:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  

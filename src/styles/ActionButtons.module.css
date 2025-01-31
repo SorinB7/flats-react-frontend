@@ -1,0 +1,44 @@
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addButton {
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: not-allowed; 
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.6; 
+  }
+  
+  .removeButton {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .removeButton:hover {
+    background-color: #d32f2f; 
+  }
+  
+  .removeButton:active {
+    background-color: #b71c1c; 
+  }
+  
+  .addButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  

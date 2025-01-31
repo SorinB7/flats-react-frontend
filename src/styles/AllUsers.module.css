@@ -1,0 +1,245 @@
+.allUsersContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filters select,
+.filters input,
+.filters label {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+  outline: none;
+}
+
+.filters select:focus,
+.filters input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.userTable th,
+.userTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.userTable th {
+  background-color: #4facfe;
+  color: white;
+  font-weight: bold;
+}
+
+.userTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.userTable tr:hover {
+  background-color: #ddd;
+}
+
+.userTable td {
+  font-size: 14px;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Butoane */
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Stilizarea butoanelor */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Buton verde: Grant Admin */
+button.grantAdmin {
+  background-color: #28a745;
+  color: white;
+}
+
+button.grantAdmin:hover {
+  background-color: #218838;
+}
+
+/* Buton roșu: Delete User */
+button.deleteUser {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.deleteUser:hover {
+  background-color: #c82333;
+}
+
+/* Buton albastru: View Profile */
+button.viewProfile {
+  background-color: #007bff;
+  color: white;
+}
+
+button.viewProfile:hover {
+  background-color: #0056b3;
+}
+
+/* Mesaje de eroare */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Loader */
+.loading {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Buton galben: Edit */
+button.editUser {
+  background-color: #ffc107;
+  color: white;
+}
+
+button.editUser:hover {
+  background-color: #e0a800;
+}
+
+/* Mesaje de eroare */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Loader */
+.loading {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Buton rotund pentru Edit User */
+.editUserButton {
+  background-color: #ffc107; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.editUserButton:hover {
+  background-color: #e0a800; 
+  transform: scale(1.1); 
+}
+
+.editUserButton:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .userTable td:nth-child(2), /* Last Name */
+  .userTable th:nth-child(2), /* Last Name header */
+  .userTable td:nth-child(3), /* Email */
+  .userTable th:nth-child(3), /* Email header */
+  .userTable td:nth-child(6), /* UserType */
+  .userTable th:nth-child(6)  /* UserType header */ {
+    display: none;
+  }
+}
+
+
+/* Alte stilizări existente */
+
+@media (max-width: 767px) {
+
+  .userTable td:nth-child(4), 
+  .userTable th:nth-child(4) {
+    display: none;
+  }
+
+  .actions button {
+    padding: 4px 8px; 
+    font-size: 12px; 
+    width: 28px; 
+    height: 28px; 
+    border-radius: 50%; 
+  }
+  
+  .actions button:hover {
+    transform: scale(1.1); 
+  }
+
+  .allUsersContainer{
+    padding: 0;
+  }
+
+  .userTable tr {
+    width: fit-content; 
+  }
+}
+
+@media (max-width: 767px){
+
+  .userTable tr {
+    width: fit-content; 
+  }
+}

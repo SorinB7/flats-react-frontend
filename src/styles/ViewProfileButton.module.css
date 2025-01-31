@@ -1,0 +1,35 @@
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.flatList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flatItem {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

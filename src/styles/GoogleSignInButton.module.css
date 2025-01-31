@@ -1,0 +1,17 @@
+.googleSignIn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .googleSignIn:hover {
+    background-color: #357ae8;
+  }
+  
